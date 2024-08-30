@@ -1,0 +1,189 @@
+:root {
+    --white: #f4ecec;
+    --text: hsl(228, 12%, 48%);
+    --pale: hsl(32, 37%, 92%);
+    --green: hsl(158, 36%, 37%);
+}
+
+body {
+    background-color: var(--pale);
+}
+
+* {
+    margin: 0;
+}
+
+#header-img {
+    width: 60px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.the-product {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: "montserrat";
+
+}
+
+#email-section {
+    margin-top: 100px;
+
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+}
+
+#submit {
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "fraunces";
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: var(--green);
+    margin-right: 30px;
+}
+
+#features {
+    text-align: left;
+    max-width: 300px;
+    max-width: auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: "montserrat";
+}
+
+#video {
+    width: 100%;
+}
+
+.product-image {
+    width: 100%;
+    margin: auto;
+    height: 2000px;
+    border: 1px solid var(--text);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product1 {
+    background-image: url("https://www.studypool.com/images/studyGuides/How_to_Win_Friends_and_Influence_People/Book_Cover.jpg");
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content {
+    font-family: "montserrat";
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-price {
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: "fraunces";
+    color: var(--green);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--text);
+}
+
+.author {
+    font-family: "montserrat";
+    letter-spacing: 5px;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.header {
+    font-family: "fraunces";
+    margin: 10px o;
+    color: var(--text);
+}
+
+.add {
+    background-color: var(--green);
+    cursor: pointer;
+    padding: none;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--white);
+    font-family: "montserrat";
+    font-weight: 700;
+    margin-bottom: 10px;
+}
